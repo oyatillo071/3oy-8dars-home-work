@@ -1,0 +1,648 @@
+ @import './normalize.css';
+ @import './font.css';
+
+
+
+ *,
+ *::after,
+ *::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ ul,
+ ol {
+     list-style: none;
+
+ }
+
+ a {
+     display: inline-block;
+     text-decoration: none;
+
+ }
+
+ img {
+     display: flex;
+     object-fit: cover;
+ }
+
+ html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+     height: 100%;
+ }
+
+ body {
+     height: 100vh;
+     font-size: 1.6rem;
+     line-height: 1.5rem;
+ }
+
+ .container {
+     max-width: 1342px;
+     width: 100%;
+
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 1.5rem;
+     padding-right: 1.5rem;
+ }
+
+ .main {
+     flex-grow: 1;
+     padding: 60px 20px;
+
+ }
+
+ .main__container {
+     display: flex;
+     gap: 70px;
+     align-items: center;
+ }
+
+ .hero__info {
+     max-width: 40%;
+ }
+
+ .hero__info h1 {
+     color: #363738;
+     font-family: "Exo 2", sans-serif;
+     font-size: 5.2rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+
+ }
+
+ .hero__info p {
+     font-family: "PT Sans", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.5;
+     text-align: left;
+     color: #6B6B6C;
+     margin-top: 40px;
+ }
+
+ .hero__info a {
+     font-family: "PT Sans", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 700;
+     line-height: 1.5;
+     text-align: left;
+     color: #363738;
+     border-bottom: 3px solid #FFCE50;
+     margin-top: 40px;
+ }
+
+ .hero__truck--img {
+     width: 50%;
+ }
+
+ .hero__truck--img img {
+     width: 100%;
+     height: auto;
+ }
+
+
+ .card__container {
+     display: flex;
+     justify-content: space-evenly;
+     padding: 40px;
+     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+     max-width: 95%;
+     margin-bottom: 80px;
+     margin-top: 80px;
+     border-radius: 20px;
+ }
+
+ .card__item {
+     max-width: 350px;
+     margin-left: 20px;
+ }
+
+ .br-left {
+     border-left: 1px solid rgba(215, 215, 221, 1);
+     padding-left: 64px;
+ }
+
+ .card__items--icon {
+     width: 92px;
+     height: 92px;
+ }
+
+
+ .card__items__info--title {
+     font-family: "Exo 2", sans-serif;
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+     margin-top: 24px;
+     margin-bottom: 16px;
+
+ }
+
+ .card__items__info--disc {
+     font-family: "PT Sans", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(107, 107, 108, 1);
+
+ }
+
+ .prof__wrapper {
+     width: 100%;
+     background-image: url(../images/truck--path.png);
+     background-repeat: no-repeat;
+
+
+ }
+
+ .prof__title {
+     max-width: 60%;
+     height: 453.5px;
+     background-color: rgba(11, 117, 114, 1);
+     clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+     padding-top: 178px;
+     padding-left: 8%;
+     padding-right: 10%;
+ }
+
+ .prof__title h3 {
+     font-family: "Exo 2", sans-serif;
+     font-size: 4.8rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(255, 255, 255, 1);
+     max-width: 362px;
+
+ }
+
+ .prof__cards {
+     margin-top: 100px;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     gap: 40px;
+ }
+
+ .prof__card {
+     display: flex;
+     width: 40%;
+     gap: 40px;
+     align-items: center;
+ }
+
+ .prof__card--info h5 {
+     font-family: "Exo 2", sans-serif;
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+
+ }
+
+ .prof__card--info p {
+     font-family: "PT Sans", sans-serif;
+     margin-top: 10px;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     text-align: left;
+     color: rgba(107, 107, 108, 1);
+
+ }
+
+ .work__title {
+     margin-top: 80px;
+ }
+
+ .work__title h3 {
+     font-family: "Exo 2", sans-serif;
+     font-size: 4.8rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+ }
+
+ .work__title p {
+     max-width: 40%;
+     font-family: "PT Sans", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.25;
+     text-align: left;
+     margin-top: 20px;
+     margin-bottom: 56px;
+     color: rgba(107, 107, 108, 1);
+ }
+
+ .work__cards {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .work__card {
+     max-width: 30%;
+     border-radius: 10px;
+     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+
+ }
+
+ .work__card--info {
+     padding: 32px;
+ }
+
+ .work__card img {
+     max-width: 100%;
+ }
+
+ .work__card--info h5 {
+     font-family: "Exo 2", sans-serif;
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+
+
+ }
+
+ .work__card--info p {
+     font-family: "PT Sans", sans-serif;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.5;
+     text-align: left;
+     color: rgba(107, 107, 108, 1);
+     margin-top: 24px;
+     margin-bottom: 20px;
+ }
+
+ .work__price {
+     font-size: 1.6rem;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+     border-bottom: 3px solid rgba(255, 206, 80, 1);
+     width: 110px;
+     padding-bottom: 10px;
+
+ }
+
+ .delivery__title {
+     font-family: "Exo 2", sans-serif;
+     font-size: 4.8rem;
+     font-weight: 600;
+     line-height: 1.25;
+     text-align: left;
+     color: rgba(54, 55, 56, 1);
+     margin-top: 80px;
+     margin-bottom: 60px;
+ }
+
+.delivery__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.delivery__card{
+   max-width:90%;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    padding:32px 96px;
+    border-radius:20px;
+    display: flex;
+    gap: 30px;
+}
+.delivery__card h4{
+    font-family: "Exo 2",sans-serif;
+font-size: 2rem;
+font-weight: 600;
+line-height: 1.25;
+text-align: left;
+color:rgba(54, 55, 56, 1);
+margin-bottom: 40px;
+padding-bottom: 20px;
+border-bottom: 3px solid rgba(255, 206, 80, 1);
+max-width: 50%;
+}
+.delivery__card p{
+    font-family: "PT Sans",sans-serif;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+color:rgba(107, 107, 108, 1);
+}
+
+
+
+
+
+
+
+
+ @media screen and (max-width:1280px) {
+     .hero__info h1 {
+         font-size: 4rem;
+     }
+
+     .hero__info p {
+         font-size: 1.2rem;
+     }
+ }
+
+ @media screen and (max-width: 968px) {
+     .hero__truck--img {
+         width: 90%;
+
+     }
+
+
+     .main__container {
+         flex-direction: column;
+
+     }
+
+     .hero__info {
+         max-width: 90%;
+     }
+
+     .hero__info p {
+         text-align: center;
+         font-size: 1.6rem;
+         line-height: 1.25;
+     }
+
+     .hero__info h1 {
+         text-align: center;
+         font-size: 4.4rem;
+     }
+
+     .learn__more {
+         margin-left: 40%;
+
+     }
+
+     .prof__title h3 {
+         font-size: 4rem;
+     }
+     .delivery__card img{
+        display: none;
+     }
+ }
+
+ @media screen and (max-width:840px) {
+     .card__items--icon {
+         width: 70px;
+         height: 70px;
+     }
+
+     .card__items__info--title {
+         font-size: 1.6rem;
+     }
+
+     .card__items__info--disc {
+         font-size: 1.2rem;
+     }
+
+     .br-left {
+         padding-left: 20px;
+     }
+
+     .prof__cards {
+         flex-direction: column;
+         margin-left: 10%;
+     }
+
+     .prof__card {
+         width: 80%;
+
+     }
+
+
+ }
+
+ @media screen and (max-width:768px) {
+     .card__container {
+         flex-direction: column;
+         border: none;
+         box-shadow: none;
+     }
+
+
+     .card__item {
+         display: flex;
+         gap: 15px;
+         align-items: center;
+         max-width: 100%;
+
+         border-radius: 20px;
+         padding: 32px;
+         margin-bottom: 50px;
+         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+
+     }
+
+     .card__items__info--title {
+         font-size: 2rem;
+     }
+
+     .card__items__info--disc {
+         max-width: 394px;
+         font-size: 1.6rem;
+     }
+
+     .br-left {
+         padding-left: none;
+     }
+
+     .work__cards {
+         flex-direction: column;
+         gap: 40px;
+     }
+
+     .ds-none {
+         display: none;
+     }
+
+     .work__card {
+         max-width: 90%;
+     }
+
+     .work__card img {
+         width: 100%;
+     }
+
+     .work__title h3 {
+         font-size: 3.5rem;
+     }
+
+     .work__title p {
+         font-size: 1.2rem;
+         max-width: 80%;
+     }
+     .delivery__title{
+        font-size: 3.5rem;
+     }
+  
+
+ }
+
+ @media screen and (max-width: 576px) {
+
+
+     .hero__truck--img {
+         width: 100%;
+     }
+
+
+     .main__container {
+         flex-direction: column;
+
+     }
+
+     .hero__info {
+         max-width: 100%;
+     }
+
+     .hero__info p {
+         text-align: left;
+         font-size: 1.5rem;
+         line-height: 1.5;
+     }
+
+     .hero__info h1 {
+         text-align: left;
+         font-size: 2.8rem;
+         line-height: 1.25;
+     }
+
+     .learn__more {
+         margin-left: 0px;
+
+     }
+
+     .card__container {
+         width: 100%;
+         padding: 20px;
+         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+         border-radius: 20px;
+     }
+
+
+     .card__item {
+
+         flex-direction: column;
+         gap: 15px;
+         align-items: normal;
+         max-width: 100%;
+         padding: 32px;
+         margin-bottom: 50px;
+         box-shadow: none;
+
+
+     }
+
+     .br-left {
+         border: none;
+         box-shadow: none;
+     }
+
+     .card__items__info--title {
+         font-size: 1.8rem;
+     }
+
+     .card__items__info--disc {
+         font-size: 1.5rem;
+     }
+
+     .card__items--icon {
+         width: 68px;
+         height: 68px;
+     }
+
+     .prof__wrapper {
+         width: 100%;
+         background-image: none;
+
+
+     }
+
+     .prof__title {
+         max-width: 100%;
+         height: 70px;
+         background-color: white;
+         clip-path: none;
+         padding-top: 20px;
+         padding-left: 8%;
+         padding-right: 10%;
+     }
+
+     .prof__title h3 {
+         font-size: 3rem;
+         font-weight: 600;
+         line-height: 1.25;
+         text-align: left;
+         color: black;
+         max-width: 100%;
+
+     }
+
+     .prof__cards {
+         margin-top: 80px;
+         margin-left: 0;
+     }
+
+     .prof__card--icon {
+         width: 50px;
+         height: 50px;
+     }
+
+     .prof__card--info h5 {
+         font-size: 1.5rem;
+     }
+
+     .prof__card--info p {
+         font-size: 1.2rem;
+     }
+
+     .prof__card {
+         gap: 10px;
+     }
+
+     .ds-none-phone {
+         display: none;
+     }
+
+     .work__card {
+         width: 100%;
+     }
+
+
+     .delivery__card--info h4{
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+     }
+     .delivery__card--info p{
+        font-size: 1rem;
+     }
+        
+     .delivery__card{
+        padding: 20px 30px;
+     }
+
+     .delivery__title{
+        font-size: 3rem;
+     }
+ }
